@@ -9,7 +9,6 @@
     url("../fonts/caramelo.svg#caramelo") format("svg");
   font-weight: normal;
   font-style: normal;
-
 }
 
 [data-icon]:before {
@@ -38,15 +37,24 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-caramelo-ampolleta:before {
+.icon-caramelo-amp-round:before {
   content: "\61";
 }
+.icon-caramelo-ampolleta:before {
+  content: "\62";
+}
+.icon-caramelo-impr-round:before {
+  content: "\63";
+}
 .icon-caramelo-impresora:before {
-  content: "\69";
+  content: "\64";
 }
 .icon-caramelo-polera:before {
-  content: "\70";
+  content: "\65";
 }
 .icon-caramelo-tag:before {
-  content: "\65";
+  content: "\66";
+}
+.icon-caramelo-web-round:before {
+  content: "\67";
 }

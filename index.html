@@ -47,30 +47,59 @@
     <!-- Navbar -->
     <nav class="site-navigation navbar navbar-default navbar-fixed-top">
         <div class="navbar-header">
-            <!-- Navbar Toggle Button When Hidden -->
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav-collapse">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <!-- Brand Name -->
-            <a class="navbar-brand" href="#"><img src="assets/img/logo/logo-caramelo.png" alt="" class="img-fluid logo-caramelo"></a>
+            <a class="navbar-brand" href="#"><img src="assets/img/logo/logo_caramelo.svg" alt="" class="img-fluid logo-caramelo"></a>
         </div>
-
-        <!-- Navbar Links Container-->
         <div class="collapse navbar-collapse" id="main-nav-collapse">
-            <!-- Navbar Links -->
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#home-screen"><i class="fa fa-home theme-color"></i>&nbsp;Inicio</a></li>
-                <!-- <li><a href="#services"><i class="fa fa-cog theme-color"></i>&nbsp;Servicios</a></li> -->
-                <li><a href="#services"><img src="assets/img/servicio-icon.png" alt="" style="width:52px;"></li>
+            <ul class="nav navbar-nav navbar-right navbar-nav-car">
+                <li>
+                    <a href="#services">
+                      <img src="assets/img/servicio.svg" alt="" style="width:52px;">
+                      <p>Servicios</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#work">
+                      <img src="assets/img/portafolio.svg" alt="" style="width:52px;">
+                      <p>Portafolio</p>
+                    </a>
+                </li>
+                <li>
+                  <a href="#contact">
+                    <img src="assets/img/contacto.svg" alt="" style="width:27px;">
+                    <p>Contacto</p>
+                  </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Navbar -->
+    <!--<nav class="site-navigation navbar navbar-default navbar-fixed-top">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img src="assets/img/logo/logo_caramelo.svg" alt="" class="img-fluid logo-caramelo"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="main-nav-collapse">
+            <ul class="nav navbar-nav navbar-right navbar-nav-caramelo">
+                <li><a href="#services"><i class="fa fa-cog theme-color"></i>&nbsp;Servicios</a></li>
                 <li><a href="#work"><i class="fa fa-code theme-color"></i>&nbsp;Portafolio</a></li>
                 <li><a href="#features"><i class="fa fa-check-circle theme-color"></i>&nbsp;Features</a></li>
                 <li><a href="#contact"><i class="fa fa-envelope theme-color"></i>&nbsp;Contacto</a></li>
             </ul>
         </div>
-    </nav>
+    </nav> -->
+
     <!-- Home Screen -->
     <section id="home-screen" class="home-screen full-screen">
         <!-- Icon Slider In Home Screen -->
@@ -104,16 +133,7 @@
             <div class="brand-text-slider-inner flexslider">
                 <ul class="slides">
                     <li>
-                        <h2>We Are <b>Initializer</b></h2>
-                    </li>
-                    <li>
-                        <h2>We Build <b>Design</b></h2>
-                    </li>
-                    <li>
-                        <h2>For <b>You</b></h2>
-                    </li>
-                    <li>
-                        <h2>For Your <b>Brand</b></h2>
+                        <h2>Hola!</h2>
                     </li>
                 </ul>
             </div>
@@ -127,8 +147,10 @@
         <article class="service-item service-item-left-align">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-4"><i class="service-icon icon-caramelo-ampolleta" data-animation="slideInDown"></i></div>
-                    <div class="col-sm-offset-1 col-sm-7 service-content">
+                    <div class="col-sm-5 text-center">
+                      <img src="assets/img/servicios/cohete.svg" alt="Cohete" data-animation="bounceInUp" class="service-img">
+                    </div>
+                    <div class="col-sm-7 service-content">
                         <h2 class="service-title" data-animation="fadeInRightBig">Diseño Gráfico</h2>
                         <div class="service-text" data-animation="fadeInRightBig" data-animation-delay=".2s">
                             <p>
@@ -143,9 +165,9 @@
         <article class="service-item service-item-right-align theme-bg">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-offset-1 col-sm-4 visible-xs"><i class="service-icon icon-seo-mobile-marketing3" data-animation="rotateIn"></i></div>
+                    <div class="col-sm-5 visible-xs"><i class="service-icon icon-seo-mobile-marketing3" data-animation="rotateIn"></i></div>
                     <div class="col-sm-7  service-content">
-                        <h2 class="service-title" data-animation="fadeInLeftBig">Hola</h2>
+                        <h2 class="service-title" data-animation="fadeInLeftBig">Desarollo Web</h2>
                         <div class="service-text" data-animation="fadeInLeftBig" data-animation-delay=".2s">
                             <p>
                                 This Is an Ultra Responsive Design With Targetting All  Devices Incuding Portables.
@@ -153,8 +175,9 @@
                         </div>
 
                     </div>
-                    <div class="col-sm-offset-1 col-sm-4 hidden-xs"><i class="service-icon icon-seo-mobile-marketing3" data-animation="rotateIn"></i></div>
-
+                    <div class="col-sm-offset-1 col-sm-4 hidden-xs text-center">
+                      <img src="assets/img/servicios/web.svg" alt="Cohete" data-animation="bounceInRight" class="service-img">
+                    </div>
                 </div>
             </div>
         </article>
@@ -267,20 +290,13 @@
 
     <!-- Features -->
     <section id="features" class="features">
-
         <!-- Background Abstract Animation For Features Slider -->
         <span class="bg-icon-abstract fa fa-lock"></span>
-
-
         <!-- Features Slider -->
         <div id="features-slider" class="carousel slide features-slider" data-ride="carousel">
-
-
             <div class="carousel-inner">
-
                 <!-- Features Slider Frame 1 -->
                 <div class="item active features-slide">
-
                     <span class="features-slide-icon fa fa-lock"></span>
                     <h3 class="features-slide-title">We know secure, 256-bits of it in every interaction you do</h3>
                     <p class="features-slide-text">
@@ -334,8 +350,8 @@ sharing it with anyone and backing it up daily.
         <div class="container">
             <!-- Header And Title -->
             <header class="contact-section-header">
-                <h2 class="contact-section-title" data-animation="fadeInUp">Get In Touch</h2>
-                <p class="contact-section-subtitle" data-animation="fadeInUp" data-animation-delay=".05s">We’re currently accepting new client projects. We look forward to serving you.</p>
+                <h2 class="contact-section-title" data-animation="fadeInUp">Contáctanos</h2>
+                <p class="contact-section-subtitle" data-animation="fadeInUp" data-animation-delay=".05s">Algo que diga asi como: Vamos a darte un servicio brutal si te contactas con nosotros.</p>
             </header>
             <div class="row">
                 <div class="col-sm-9">
@@ -349,8 +365,8 @@ sharing it with anyone and backing it up daily.
                 </div>
                 <!-- Contact Details -->
                 <div class="col-sm-3 contact-details">
-                    <h3 class="contact-details-title" data-animation="fadeInRightBig">Contact Details</h3>
-                    <p data-animation="fadeInRightBig" data-animation-delay=".1s">initializer@google.com</p>
+                    <h3 class="contact-details-title" data-animation="fadeInRightBig">Detalle de Contacto</h3>
+                    <p data-animation="fadeInRightBig" data-animation-delay=".1s">hola@caramelodiseno.cl</p>
                     <br />
                     <p data-animation="fadeInRightBig" data-animation-delay=".2s">(+01) 45 876 58425</p>
 
@@ -410,7 +426,7 @@ sharing it with anyone and backing it up daily.
         </section>
         <!-- Copyright -->
         <section class="copyright">
-            <p>©Copyright all rights reserved. @2013 Initializer Pvt.Ltd</p>
+            <p>©2018 Todos los derechos reservados - Caramelo</p>
         </section>
     </footer>
     <script src="assets/js/jquery-1.10.2.js"></script>

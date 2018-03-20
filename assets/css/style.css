@@ -2,3 +2,34 @@
   width: 250px;
   margin:1px 0px 1px 20px
 }
+.navbar-nav-caramelo{
+  height: 87px;
+}
+.navbar-nav-caramelo li{
+  height: 100%;
+}
+.navbar-nav-caramelo li a{
+  height: 100%;
+  font-size: 17px;
+  padding-top: 31px;
+}
+.navbar-nav-caramelo li>a>p{
+  font-size: 13px;
+}
+
+
+/*------------*/
+.navbar-nav-car{
+  height: 87px;
+}
+.navbar-nav-car li{
+  height: 100%;
+}
+.navbar-nav-car li a{
+  height: 100%;
+  font-size: 17px;
+  padding-top: 18px;
+}
+.navbar-nav-car li>a>p{
+  font-size: 13px;
+}

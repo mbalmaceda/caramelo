@@ -647,7 +647,8 @@ div.hz-divider.x-large {
   color: white;
 }
 .btn.btn-brand:hover {
-  background-color: #84d08f;
+  background-color: #ffffff;
+  color: #bdc3c7;
   border: none;
 }
 .btn.btn-brand:active {
@@ -1470,4 +1471,13 @@ div.hz-divider.x-large {
 .js.cssanimations.no-touch .animated[data-animation] {
   opacity: 1;
 }
+
 /*#endregion */
+
+.pacman{
+  width: 100px;
+}
+
+#ajax-response{
+  display: none;
+}

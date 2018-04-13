@@ -142,11 +142,41 @@
     });
 
     //#endregion Home Screen Sliders
+    $('#form-contacto').submit(function(e) {
+        e.preventDefault();
 
+        $.ajax({
+            type: 'POST',
+            url: $(this).attr('action'),
+            dataType: 'json',
+            data: $(this).serialize() ,
+            beforeSend: function(result) {
+                $('#form-contacto button').empty();
+                $('#form-contacto button').append('<i class="fa fa-spinner fa-spin"></i> Espere ');
+                $("#ajax-response").hide();
+            },
+            success: function(data) {
+                $( "#form-contacto" ).slideToggle(1000, function(){
+                    $("#ajax-response").addClass('alert-success');
+                    $("#ajax-response").text('Gracias por contactarnos!');
+                    $("#ajax-response").slideDown(1000);
+                });
+            },
+            error: function (data) {
+                $("#ajax-response").addClass('alert-danger');
+                $("#ajax-response").text('Ha ocurrido un error');
+                $("#ajax-response").slideToggle("slow");
+            },
+            complete: function(data){
+                $('#form-contacto button').empty();
+                $('#form-contacto button').append('Enviar');
+            }
+        });
+    });
 
 });
 
-$(window).load(function () {
+/*$(window).load(function () {
 
     //#region Initilize Google Map
     if ($("#gmap").length) {
@@ -167,4 +197,4 @@ $(window).load(function () {
     }
     //#endregion Initilize Google Map
 
-});
+});*/

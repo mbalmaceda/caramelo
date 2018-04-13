@@ -166,7 +166,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-5 visible-xs"><i class="service-icon icon-seo-mobile-marketing3" data-animation="rotateIn"></i></div>
-                    <div class="col-sm-7  service-content">
+                    <div class="col-sm-7 service-content">
                         <h2 class="service-title" data-animation="fadeInLeftBig">Desarollo Web</h2>
                         <div class="service-text" data-animation="fadeInLeftBig" data-animation-delay=".2s">
                             <p>
@@ -176,7 +176,7 @@
 
                     </div>
                     <div class="col-sm-offset-1 col-sm-4 hidden-xs text-center">
-                      <img src="assets/img/servicios/web.svg" alt="Cohete" data-animation="bounceInRight" class="service-img">
+                      <img src="assets/img/servicios/web.svg" alt="Web" data-animation="bounceInRight" class="service-img">
                     </div>
                 </div>
             </div>
@@ -356,17 +356,19 @@ sharing it with anyone and backing it up daily.
             <div class="row">
                 <div class="col-sm-9">
                     <!-- Contact Form -->
-                    <form class="contact-form">
-                        <input type="text" class="form-control" placeholder="Full Name" data-animation="fadeInLeftBig" required="required" />
-                        <input type="email" class="form-control" placeholder="Email Address" required="required" data-animation="fadeInLeftBig" data-animation-delay=".1s" />
-                        <textarea rows="10" class="form-control" placeholder="Message" data-animation="fadeInLeftBig" data-animation-delay=".2s" required="required"></textarea>
-                        <button type="submit" class="btn btn-brand btn-lg" data-animation="fadeInLeftBig" data-animation-delay=".3s">Send Message&nbsp;&nbsp;&nbsp;<i class="fa fa-arrow-circle-right"></i></button>
+                    <div id="ajax-response" class="alert text-center" role="alert"></div>
+                    <form id="form-contacto" class="contact-form" action="assets/contact/send_mail.php">
+                        <input type="text" class="form-control" placeholder="Nombre" data-animation="fadeInLeftBig" required="required" name="nombre"/>
+                        <input type="email" class="form-control" placeholder="Email" required="required" data-animation="fadeInLeftBig" data-animation-delay=".1s" name="email"/>
+                        <input type="text" class="form-control" placeholder="Asunto" required="required" data-animation="fadeInLeftBig" data-animation-delay=".2s" name="asunto"/>
+                        <textarea rows="7" class="form-control" placeholder="Mensaje" data-animation="fadeInLeftBig" data-animation-delay=".3s" required="required" name="mensaje"></textarea>
+                        <button type="submit" class="btn btn-brand btn-lg" data-animation="fadeInLeftBig" data-animation-delay=".4s">Enviar Mensaje</button>
                     </form>
                 </div>
                 <!-- Contact Details -->
                 <div class="col-sm-3 contact-details">
                     <h3 class="contact-details-title" data-animation="fadeInRightBig">Detalle de Contacto</h3>
-                    <p data-animation="fadeInRightBig" data-animation-delay=".1s">hola@caramelodiseno.cl</p>
+                    <p data-animation="fadeInRightBig" data-animation-delay=".1s">hola@agenciacaramelo.cl</p>
                     <br />
                     <p data-animation="fadeInRightBig" data-animation-delay=".2s">(+01) 45 876 58425</p>
 
